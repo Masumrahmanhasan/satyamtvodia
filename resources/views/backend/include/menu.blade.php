@@ -19,8 +19,8 @@
         <td style="background:#F7B200;" height="21" vAlign="center" background="images/yellow.gif" align="middle">
             <a href="{{ route('dashboard') }}" class="middle_menu">Manage My Points</a> |
             <a href="{{ route('child_registration') }}" class="middle_menu">Child Registration</a> |
-            <a href="ChangePassword.html" class="middle_menu">Change Password</a> |
-            <a href="ChangePin.html" class="middle_menu">PIN</a> |
+            <a href="{{ route('change_password') }}" class="middle_menu">Change Password</a> |
+            <a href="{{ route('change_pin') }}" class="middle_menu">PIN</a> |
             <a href="UpdateProfile.html" class="middle_menu">Update Profile</a> |
             <a href="results.html" class="middle_menu"><strong>Draw Details</strong></a> |
 

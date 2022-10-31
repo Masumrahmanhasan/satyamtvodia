@@ -55,8 +55,8 @@
 .tbl-container {
     float: left;
     width: 632px;
-    height: 390px;
-    margin: 0 10px;
+    height: auto;
+    margin: 0 0 0 20%;
 }
 
 .tbl-container table {

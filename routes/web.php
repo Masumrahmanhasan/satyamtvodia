@@ -30,5 +30,10 @@ Route::group(['prefix' => 'panel', 'middleware' => ['auth']], function (){
     Route::post('/child-registration', [\App\Http\Controllers\UserController::class, 'store'])->name('child_registration_store');
 
     Route::get('/change-password', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'changePassword'])->name('change_password');
+    Route::post('/update-password', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'updatePassword'])->name('update_password');
+
     Route::get('/change-pin', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'changePin'])->name('change_pin');
+    Route::post('/update-pin', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'updatePin'])->name('update_pin');
+
+    Route::get('/agent/reset-pin-pass', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'agentPinPassChange'])->name('agent_pin_pass_reset');
 });
