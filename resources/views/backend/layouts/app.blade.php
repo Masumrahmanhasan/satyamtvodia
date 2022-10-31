@@ -34,12 +34,12 @@
                     Welcome</p>
                 <p>
                     <span>
-                        <span id="siteDataHolder_lblMemberName">Mr. Amar Ji 7 Chamu Rajasthan</span>
+                        <span id="siteDataHolder_lblMemberName">{{ ucfirst(auth()->user()->first_name) }} </span>
                     </span>
                 </p>
                 <p>
                     Your Current Balance is <strong>
-                        <span id="siteDataHolder_lblCurrentBalance">1.13</span></strong>
+                        <span id="siteDataHolder_lblCurrentBalance">{{ auth()->user()->wallet }}</span></strong>
                     <span id="siteDataHolder_spanOTC"
                           style="float:right; margin-right:20px; color:Gray; font-size:large; font-weight:bold;">
                         OTC is <strong>

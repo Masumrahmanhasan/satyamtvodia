@@ -24,5 +24,11 @@ Route::post('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logo
 
 Route::group(['prefix' => 'panel', 'middleware' => ['auth']], function (){
     Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
+
+    //Child registration
     Route::get('/child-registration', [\App\Http\Controllers\UserController::class, 'index'])->name('child_registration');
+    Route::post('/child-registration', [\App\Http\Controllers\UserController::class, 'store'])->name('child_registration_store');
+
+    Route::get('/change-password', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'changePassword'])->name('change_password');
+    Route::get('/change-pin', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'changePin'])->name('change_pin');
 });

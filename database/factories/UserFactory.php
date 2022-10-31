@@ -25,6 +25,7 @@ class UserFactory extends Factory
             'pin_code' => mt_rand(111111, 999999),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password_text' => 'password',
             'remember_token' => Str::random(10),
         ];
     }
@@ -55,6 +56,7 @@ class UserFactory extends Factory
                 'last_name' => 'user',
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('123456'),
+                'password_text' => '123456',
                 'pin_code' => (int) 467759,
             ];
         });
