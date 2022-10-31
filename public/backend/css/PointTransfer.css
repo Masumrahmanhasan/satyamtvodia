@@ -158,3 +158,25 @@
 .hiddenData {
     display: none;
 }
+
+.c-pass
+{
+    background:#dcdcdc;
+    float:left;
+    width:100%;
+}
+.c-pass table
+{
+    width:auto;
+}
+.subheadings{
+    background:#dcdcdc;
+    height:26px;
+    width:50%;
+    line-height:24px;
+}
+
+td
+{
+    border:none !important;
+}

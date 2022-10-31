@@ -19,8 +19,10 @@ Route::get('/', function () {
 
 Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'showLoginForm']);
 Route::post('/login', [\App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
+Route::post('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
 
 Route::group(['prefix' => 'panel', 'middleware' => ['auth']], function (){
     Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/child-registration', [\App\Http\Controllers\UserController::class, 'index'])->name('child_registration');
 });

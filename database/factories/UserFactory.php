@@ -17,6 +17,7 @@ class UserFactory extends Factory
     {
         return [
             'uuid' => Str::uuid(),
+            'user_id' => 'GK00'.mt_rand(111111, 999999),
             'first_name' => $this->faker->firstName(),
             'last_name' => $this->faker->lastName(),
             'email' => $this->faker->unique()->safeEmail(),

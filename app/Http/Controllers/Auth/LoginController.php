@@ -32,4 +32,13 @@ class LoginController extends Controller
         return redirect()->route('dashboard');
     }
 
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return $this->loggedOut($request) ?: redirect('/login');
+    }
+
 }

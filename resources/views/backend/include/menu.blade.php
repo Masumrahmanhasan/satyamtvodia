@@ -28,7 +28,10 @@
 
             <a onclick="return CheckBrowser();" href="PlayGame.html" class="middle_menu">Play Games</a> |
             <a href="AgentResetPinPass.html" class="middle_menu">Pin &amp; Password</a> |
-            <a href="Logout.html" class="middle_menu">Logout</a>
+            <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('frm-logout').submit();" class="middle_menu">Logout</a>
+            <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
         </td>
     </tr>
     </tbody>
