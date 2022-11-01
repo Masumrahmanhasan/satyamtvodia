@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="side-gallery">
-            <img src="../content/images/Slider1.gif" alt="" height="422px"/>
+            <img src="{{ asset('backend/images/Slider1.gif') }}" alt="" height="422px"/>
         </div>
         <div class="tbl-container" style="margin: 0 !important;">
             <table>
@@ -227,7 +227,7 @@
             </div>
         </div>
         <div class="side-gallery">
-            <img src="../content/images/Slider2.gif" alt="" height="422px"/>
+            <img src="{{ asset('backend/images/Slider2.gif') }}" alt="" height="422px"/>
         </div>
     </div>
 
