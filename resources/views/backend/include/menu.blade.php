@@ -21,13 +21,13 @@
             <a href="{{ route('child_registration') }}" class="middle_menu">Child Registration</a> |
             <a href="{{ route('change_password') }}" class="middle_menu">Change Password</a> |
             <a href="{{ route('change_pin') }}" class="middle_menu">PIN</a> |
-            <a href="UpdateProfile.html" class="middle_menu">Update Profile</a> |
-            <a href="results.html" class="middle_menu"><strong>Draw Details</strong></a> |
+            <a href="{{ route('profile') }}" class="middle_menu">Update Profile</a> |
+            <a href="#" class="middle_menu"><strong>Draw Details</strong></a> |
 
             <a href="#" class="middle_menu">Download Patch</a> |
 
             <a onclick="return CheckBrowser();" href="PlayGame.html" class="middle_menu">Play Games</a> |
-            <a href="AgentResetPinPass.html" class="middle_menu">Pin &amp; Password</a> |
+            <a href="" class="middle_menu">Pin &amp; Password</a> |
             <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('frm-logout').submit();" class="middle_menu">Logout</a>
             <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}

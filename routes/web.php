@@ -32,4 +32,6 @@ Route::group(['prefix' => 'panel', 'middleware' => ['auth']], function (){
     Route::post('/update-pin', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'updatePin'])->name('update_pin');
 
     Route::get('/agent/reset-pin-pass', [\App\Http\Controllers\Auth\ChangePasswordController::class, 'agentPinPassChange'])->name('agent_pin_pass_reset');
+
+    Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
 });
