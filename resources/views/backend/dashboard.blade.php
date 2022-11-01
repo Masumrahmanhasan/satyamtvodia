@@ -7,7 +7,7 @@
         <div class="side-gallery">
             <img src="../content/images/Slider1.gif" alt="" height="422px"/>
         </div>
-        <div class="tbl-container">
+        <div class="tbl-container" style="margin: 0 !important;">
             <table>
                 <tr>
                     <th colspan="2" class="headings" align="left">
